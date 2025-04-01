@@ -1,0 +1,29 @@
+### Listar todos os produtos
+GET http://localhost:3000/produtos
+
+### Buscar um produto pelo ID (Exemplo: 1)
+GET http://localhost:3000/produtos/1
+
+### Adicionar um novo produto
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Fini",
+  "preco": 7.99
+}
+
+### Atualizar um produto (Exemplo: ID 1)
+PUT http://localhost:3000/produtos/4
+Content-Type: application/json
+
+{
+  "nome": "Arroz Integral",
+  "preco": 12.50
+}
+
+### Deletar um produto (Exemplo: ID 1)
+DELETE http://localhost:3000/produtos/40b6d112-1141-475a-a73f-f14c36b8ee6b
+
+### Deletar todos os produtos
+DELETE http://localhost:3000/produtos
